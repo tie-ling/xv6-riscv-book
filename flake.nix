@@ -11,7 +11,7 @@
       devShell.x86_64-linux = pkgs.mkShell {
         nativeBuildInputs = with pkgs; [
           gnumake
-          (pkgs.texliveBasic.withPackages (ps: with ps; [ listings ]);)
+          (pkgs.texliveBasic.withPackages (ps: with ps; [ listings ]))
         ];
       };
     };
